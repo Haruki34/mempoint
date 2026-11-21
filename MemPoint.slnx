@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/api/">
+    <Project Path="api/MemPoint.Api.Tests/MemPoint.Api.Tests.csproj" />
+    <Project Path="api/MemPoint.Api/MemPoint.Api.csproj" />
+  </Folder>
+</Solution>
