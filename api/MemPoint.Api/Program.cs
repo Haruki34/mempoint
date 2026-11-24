@@ -3,6 +3,7 @@ using MemPoint.Api.Data;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using MemPoint.Api.Security;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -63,6 +64,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseCrossSiteRequestGuard();
 app.UseAuthentication();
 app.UseAuthorization();
 
